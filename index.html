@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PharmaGo | Eczaneden Eve Hızlı Teslimat</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f6f3ff;color:#211b33;display:flex;min-height:100vh;-webkit-text-size-adjust:100%}body.dark{background:#11101a;color:#f4f1ff}.sidebar{width:290px;background:linear-gradient(180deg,#6d39d6,#3e247e);color:white;padding:24px;position:fixed;inset:0 auto 0 0;overflow:auto}.brand{display:flex;gap:12px;align-items:center;margin-bottom:24px}.logo{width:54px;height:54px;border-radius:18px;background:white;color:#6d39d6;display:grid;place-items:center;font-weight:900;font-size:22px}.brand h1{margin:0;font-size:25px}.brand p{margin:4px 0 0;opacity:.85;font-size:13px}.nav{width:100%;padding:13px 14px;margin:6px 0;border:0;border-radius:14px;text-align:left;cursor:pointer;background:rgba(255,255,255,.11);color:white;font-weight:700;touch-action:manipulation}.nav:hover,.nav.active{background:white;color:#5129aa}.sidebar-card{margin-top:24px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:5px}.app{margin-left:290px;width:calc(100% - 290px);padding:28px}.topbar{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:24px}.topbar h2{margin:0;font-size:30px}.topbar p{margin:6px 0 0;color:#6d6880}.top-actions{display:flex;gap:10px}.screen{display:none}.screen.active{display:block}.hero{background:linear-gradient(135deg,#ffffff,#eee8ff);border-radius:30px;padding:34px;display:grid;grid-template-columns:1fr 290px;gap:24px;box-shadow:0 20px 60px rgba(58,36,125,.12)}body.dark .hero,body.dark .card{background:#1d1a2b;color:#f4f1ff}.badge{display:inline-block;background:#e9ddff;color:#5721bd;padding:8px 12px;border-radius:999px;font-weight:800}.hero h3{font-size:40px;margin:16px 0 10px}.hero p{font-size:18px;line-height:1.6;color:#5f596f}body.dark .hero p,body.dark .topbar p{color:#c9c1e8}.hero-actions{display:flex;gap:12px;margin-top:22px}.hero-box{background:#6d39d6;color:white;border-radius:26px;padding:24px;text-align:center;display:flex;flex-direction:column;justify-content:center}.hero-box div{font-size:58px}.hero-box h4{font-size:36px;margin:10px 0}.grid{display:grid;gap:18px;margin-top:20px}.two{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(4,1fr)}.card{background:white;border-radius:24px;padding:24px;box-shadow:0 14px 38px rgba(51,38,94,.09)}.card h3{margin-top:0}.card span{font-size:30px}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.steps div{background:#f2edff;border-radius:18px;padding:18px;text-align:center}.steps b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#6d39d6;color:white;margin-bottom:8px}.profile-card{display:flex;align-items:center;gap:20px}.avatar{width:90px;height:90px;border-radius:28px;background:#6d39d6;color:white;display:grid;place-items:center;font-weight:900;font-size:30px}.form-grid,.toolbar{display:grid;grid-template-columns:1fr 1fr auto;gap:12px}.toolbar{grid-template-columns:1fr 220px}input,select,textarea{width:100%;border:1px solid #d8d0ef;border-radius:14px;padding:14px;font:inherit;background:white;color:#211b33;min-height:48px}body.dark input,body.dark select,body.dark textarea{background:#171425;color:#fff;border-color:#3a315b}textarea{min-height:110px;resize:vertical}button{border:0;border-radius:14px;padding:13px 18px;font-weight:800;cursor:pointer;min-height:46px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.primary{background:#6d39d6;color:white}.secondary{background:#29bda5;color:white}.ghost{background:white;color:#5a35b2;border:1px solid #ded5f5}.danger-light{background:#ffe9e9;color:#c62929}.full{width:100%;margin-top:12px}.product{display:flex;flex-direction:column;gap:10px}.product .icon{font-size:42px}.price{font-size:22px;color:#5129aa;font-weight:900}.pill{display:inline-block;background:#f0ebff;color:#6030c8;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}.cart-row{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #eee}.cart-row button{padding:8px 10px;background:#ffe9e9;color:#b32424}.total{font-size:20px;text-align:right}.hidden{display:none!important}.track-line{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:24px 0}.track-step{padding:18px 10px;border-radius:16px;text-align:center;background:#eee9fa;color:#786b9c;font-weight:800}.track-step.done{background:#6d39d6;color:white}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:14px;border-bottom:1px solid #eee;white-space:nowrap}.toast{position:fixed;right:24px;bottom:24px;background:#211b33;color:white;padding:14px 18px;border-radius:14px;opacity:0;transform:translateY(20px);transition:.25s;z-index:9999}.toast.show{opacity:1;transform:translateY(0)}details{background:#f4f0ff;border-radius:14px;padding:14px;margin:10px 0}.mobile-bottom-nav{display:none}
+@media(max-width:900px){body{display:block;padding-bottom:92px}.sidebar{position:static;width:100%;height:auto;padding:16px}.brand{margin-bottom:12px}.sidebar .nav{display:none}.sidebar-card{margin-top:12px}.app{margin:0;width:100%;padding:14px}.hero,.two,.three,.stats,.steps,.form-grid,.toolbar{grid-template-columns:1fr}.hero{padding:22px;border-radius:22px}.hero h3{font-size:29px}.hero p{font-size:15px}.hero-actions,.top-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.topbar{display:block}.top-actions{margin-top:12px}.track-line{grid-template-columns:1fr}.card{padding:18px;border-radius:18px}.profile-card{align-items:flex-start}.cart-row{align-items:center}.toast{left:12px;right:12px;bottom:104px}.mobile-bottom-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;position:fixed;left:0;right:0;bottom:0;background:#ffffff;border-top:1px solid #ded5f5;padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:9998;box-shadow:0 -8px 30px rgba(46,31,91,.16)}body.dark .mobile-bottom-nav{background:#171425;border-color:#362d55}.mobile-bottom-nav button{padding:8px 4px;min-height:56px;border-radius:14px;background:#f0ebff;color:#6030c8;font-size:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}.mobile-bottom-nav button.active{background:#6d39d6;color:white}.mobile-bottom-nav b{font-size:19px;line-height:1}.mobile-more-panel{position:fixed;left:10px;right:10px;bottom:84px;background:white;border:1px solid #ded5f5;border-radius:20px;padding:10px;z-index:9999;box-shadow:0 16px 50px rgba(0,0,0,.22);display:none}body.dark .mobile-more-panel{background:#171425;border-color:#362d55}.mobile-more-panel.active{display:grid;gap:8px}.mobile-more-panel button{text-align:left;background:#f0ebff;color:#6030c8}body.dark .mobile-more-panel button{background:#251d3d;color:#fff}}
+
+  </style>
 </head>
 <body>
   <div id="toast" class="toast"></div>
@@ -192,6 +196,68 @@
     <button id="mobileMoreBtn" type="button"><b>☰</b><span>Diğer</span></button>
   </nav>
 
-  <script src="script.js"></script>
+  <script>
+const demoUser={name:'Salih Efe Akardere',studentNo:'24010501061',tc:'12345678901'};
+const products=[
+{id:1,name:'Parol 500 mg',cat:'Reçetesiz',price:89,icon:'💊',desc:'Ağrı kesici / ateş düşürücü'},
+{id:2,name:'C Vitamini 1000 mg',cat:'Vitamin',price:145,icon:'🍊',desc:'Bağışıklık desteği'},
+{id:3,name:'Tansiyon İlacı',cat:'Reçeteli',price:210,icon:'🫀',desc:'e-Nabız reçetesi gerekir'},
+{id:4,name:'Ateş Ölçer',cat:'Medikal',price:320,icon:'🌡️',desc:'Dijital ölçüm cihazı'},
+{id:5,name:'Boğaz Pastili',cat:'Reçetesiz',price:75,icon:'🍬',desc:'Boğaz rahatlatıcı'},
+{id:6,name:'Şeker Ölçüm Strip',cat:'Medikal',price:260,icon:'🩸',desc:'Diyabet takip ürünü'},
+{id:7,name:'D Vitamini',cat:'Vitamin',price:170,icon:'☀️',desc:'Günlük vitamin desteği'},
+{id:8,name:'Antibiyotik Reçetesi',cat:'Reçeteli',price:185,icon:'🧾',desc:'Sadece reçete ile sipariş'}
+];
+const recipes=[
+{title:'Reçete #RX-2026-001',doctor:'Dr. Ayşe Demir',items:['Tansiyon İlacı','D Vitamini']},
+{title:'Reçete #RX-2026-002',doctor:'Dr. Mehmet Kaya',items:['Antibiyotik Reçetesi','Boğaz Pastili']}
+];
+let cart=JSON.parse(localStorage.getItem('pg_cart')||'[]');
+let orders=JSON.parse(localStorage.getItem('pg_orders')||'[]');
+let connected=localStorage.getItem('pg_enabiz')==='1';
+let trackIndex=Number(localStorage.getItem('pg_track')||'0');
+const statuses=['Sipariş Alındı','Eczane Onayladı','Kurye Yola Çıktı','Adrese Yaklaştı','Teslim Edildi'];
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem('pg_cart',JSON.stringify(cart));localStorage.setItem('pg_orders',JSON.stringify(orders));localStorage.setItem('pg_track',String(trackIndex));}
+function toast(msg){const t=$('toast');if(!t)return; t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function show(screen){
+  if(!$(screen)) return;
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  $(screen).classList.add('active');
+  document.querySelectorAll('[data-screen]').forEach(n=>n.classList.toggle('active',n.dataset.screen===screen));
+  const names={dashboard:'Ana Sayfa',profile:'Demo Kullanıcı',enabiz:'e-Nabız',products:'Ürünler',cart:'Sepet & Ödeme',tracking:'Sipariş Takibi',history:'Sipariş Geçmişi',support:'Destek',admin:'Admin Panel'};
+  if($('pageTitle')) $('pageTitle').textContent=names[screen]||'PharmaGo';
+  const panel=$('mobileMorePanel'); if(panel) panel.classList.remove('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function setClick(id,fn){const el=$(id); if(el) el.addEventListener('click',fn)}
+document.addEventListener('click',e=>{
+  const nav=e.target.closest('[data-screen]');
+  if(nav){ e.preventDefault(); show(nav.dataset.screen); }
+});
+setClick('mobileMoreBtn',()=>{$('mobileMorePanel')?.classList.toggle('active')});
+setClick('darkModeBtn',()=>{document.body.classList.toggle('dark');toast('Tema değiştirildi')});
+setClick('resetBtn',()=>{if(confirm('Demo verileri sıfırlansın mı?')){cart=[];orders=[];connected=false;trackIndex=0;localStorage.clear();renderAll();show('dashboard');toast('Demo sıfırlandı')}});
+function renderProducts(){const q=($('searchProduct')?.value||'').toLowerCase();const cat=$('categoryFilter')?.value||'all';let list=products.filter(p=>(cat==='all'||p.cat===cat)&&(p.name.toLowerCase().includes(q)||p.desc.toLowerCase().includes(q)));$('productList').innerHTML=list.map(p=>`<div class="card product"><div class="icon">${p.icon}</div><span class="pill">${p.cat}</span><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price} TL</div><button class="primary" onclick="addCart(${p.id})">Sepete Ekle</button></div>`).join('')||'<div class="card">Ürün bulunamadı.</div>';}
+if($('searchProduct')) $('searchProduct').oninput=renderProducts;
+if($('categoryFilter')) $('categoryFilter').onchange=renderProducts;
+window.addCart=id=>{cart.push(products.find(p=>p.id===id));save();renderAll();toast('Ürün sepete eklendi')};
+window.removeCart=i=>{cart.splice(i,1);save();renderAll();toast('Ürün sepetten çıkarıldı')};
+function renderCart(){
+  $('cartItems').innerHTML=cart.map((p,i)=>`<div class="cart-row"><span>${p.icon} ${p.name}</span><b>${p.price} TL</b><button onclick="removeCart(${i})">Sil</button></div>`).join('')||'<p>Sepetiniz boş.</p>';
+  const total=cart.reduce((a,b)=>a+b.price,0);$('cartTotal').textContent=total+' TL';$('cartCountDash').textContent=cart.length+' ürün';
+}
+setClick('connectEnabiz',()=>{if($('tcInput').value!==demoUser.tc){toast('Demo TC: 12345678901 olmalı');return}connected=true;localStorage.setItem('pg_enabiz','1');renderRecipes();renderAll();toast('e-Nabız bağlantısı başarılı')});
+function renderRecipes(){if(!connected){$('recipes').classList.add('hidden');return}$('recipes').classList.remove('hidden');$('recipes').innerHTML=recipes.map((r,idx)=>`<div class="card"><h3>${r.title}</h3><p>${r.doctor}</p><ul>${r.items.map(i=>`<li>${i}</li>`).join('')}</ul><button class="secondary" onclick="addRecipe(${idx})">Reçetedeki Ürünleri Sepete Ekle</button></div>`).join('');}
+window.addRecipe=idx=>{recipes[idx].items.forEach(name=>{const p=products.find(x=>x.name===name);if(p)cart.push(p)});save();renderAll();toast('Reçete ürünleri sepete eklendi')};
+setClick('createOrder',()=>{if(cart.length===0){toast('Sipariş için sepete ürün ekleyin');return}const total=cart.reduce((a,b)=>a+b.price,0);const code='PG-'+Math.floor(100000+Math.random()*900000);orders.unshift({code,total,payment:$('payment').value,status:'Sipariş Alındı',items:[...cart]});cart=[];trackIndex=0;save();renderAll();show('tracking');toast('Sipariş oluşturuldu: '+code)});
+setClick('nextTrack',()=>{if(!orders.length){toast('Aktif sipariş yok');return}if(trackIndex<statuses.length-1)trackIndex++;orders[0].status=statuses[trackIndex];save();renderAll();toast('Durum güncellendi')});
+function renderTracking(){if(!orders.length){$('orderCode').textContent='Aktif sipariş bulunmuyor.'}else{$('orderCode').innerHTML=`Sipariş No: <b>${orders[0].code}</b> | Durum: <b>${orders[0].status}</b>`}$('trackLine').innerHTML=statuses.map((s,i)=>`<div class="track-step ${i<=trackIndex&&orders.length?'done':''}">${s}</div>`).join('');$('lastOrderDash').textContent=orders[0]?.status||'Sipariş yok';}
+function renderHistory(){$('historyBody').innerHTML=orders.map(o=>`<tr><td>${o.code}</td><td>${o.total} TL</td><td>${o.payment}</td><td>${o.status}</td></tr>`).join('')||'<tr><td colspan="4">Henüz sipariş yok.</td></tr>';$('adminOrders').textContent=orders.length;$('adminRevenue').textContent=orders.reduce((a,b)=>a+b.total,0)+' TL';}
+setClick('sendSupport',()=>{const msg=$('supportMsg').value.trim();if(!msg){toast('Mesaj alanı boş bırakılamaz');return}$('supportResult').textContent='Sayın Salih Efe Akardere, destek mesajınız alındı. En kısa sürede dönüş yapılacaktır.';$('supportMsg').value='';toast('Destek mesajı gönderildi')});
+function renderAll(){renderProducts();renderCart();renderRecipes();renderTracking();renderHistory();$('recipeStatus').textContent=connected?'e-Nabız bağlı':'Reçete bekliyor'}
+renderAll();
+
+  </script>
 </body>
 </html>
