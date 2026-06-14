@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaGo | Eczaneden Eve Hızlı Teslimat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">P+</div>
+      <div>
+        <h1>PharmaGo</h1>
+        <p>Eczaneden eve hızlı teslimat</p>
+      </div>
+    </div>
+    <button class="nav active" data-screen="dashboard">Ana Sayfa</button>
+    <button class="nav" data-screen="profile">Demo Kullanıcı</button>
+    <button class="nav" data-screen="enabiz">e-Nabız</button>
+    <button class="nav" data-screen="products">Ürünler</button>
+    <button class="nav" data-screen="cart">Sepet & Ödeme</button>
+    <button class="nav" data-screen="tracking">Sipariş Takibi</button>
+    <button class="nav" data-screen="history">Sipariş Geçmişi</button>
+    <button class="nav" data-screen="support">Destek</button>
+    <button class="nav" data-screen="admin">Admin Panel</button>
+
+    <div class="sidebar-card">
+      <strong>Demo Kullanıcı</strong>
+      <span>Salih Efe Akardere</span>
+      <small>24010501061</small>
+    </div>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h2 id="pageTitle">Ana Sayfa</h2>
+        <p id="pageSub">Sağlık ihtiyaçlarınızı kapıda karşılayan dijital çözüm.</p>
+      </div>
+      <div class="top-actions">
+        <button id="darkModeBtn" class="ghost">🌙 Karanlık Mod</button>
+        <button id="resetBtn" class="danger-light">Demo Sıfırla</button>
+      </div>
+    </header>
+
+    <section id="dashboard" class="screen active">
+      <div class="hero">
+        <div>
+          <span class="badge">Final Proje Demo</span>
+          <h3>PharmaGo – Eczaneden Eve Hızlı Teslimat</h3>
+          <p>Reçeteli ve reçetesiz sağlık ürünlerini en yakın eczaneden güvenli şekilde sipariş et, canlı takip et ve kapıda teslim al.</p>
+          <div class="hero-actions">
+            <button class="primary go" data-screen="enabiz">e-Nabız Bağla</button>
+            <button class="secondary go" data-screen="products">Ürünlere Git</button>
+          </div>
+        </div>
+        <div class="hero-box">
+          <div>🚚</div>
+          <strong>Ortalama teslimat</strong>
+          <h4>25-40 dk</h4>
+          <small>Nöbetçi ve yakın eczane eşleştirmesi</small>
+        </div>
+      </div>
+
+      <div class="grid stats">
+        <div class="card"><span>👤</span><strong>Salih Efe Akardere</strong><small>Demo kullanıcı aktif</small></div>
+        <div class="card"><span>🧾</span><strong id="recipeStatus">Reçete bekliyor</strong><small>e-Nabız bağlantısı</small></div>
+        <div class="card"><span>🛒</span><strong id="cartCountDash">0 ürün</strong><small>Sepetteki ürün sayısı</small></div>
+        <div class="card"><span>📦</span><strong id="lastOrderDash">Sipariş yok</strong><small>Son sipariş durumu</small></div>
+      </div>
+
+      <div class="card">
+        <h3>Kullanım Akışı</h3>
+        <div class="steps">
+          <div><b>1</b><span>Giriş Yap</span></div>
+          <div><b>2</b><span>e-Nabız Bağla</span></div>
+          <div><b>3</b><span>Ürün/Reçete Seç</span></div>
+          <div><b>4</b><span>Ödeme Yap</span></div>
+          <div><b>5</b><span>Siparişi Takip Et</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="screen">
+      <div class="card profile-card">
+        <div class="avatar">SA</div>
+        <div>
+          <h3>Salih Efe Akardere</h3>
+          <p>Öğrenci No: <b>24010501061</b></p>
+          <p>Demo hesabı final sunumu için hazırlandı.</p>
+        </div>
+      </div>
+      <div class="grid two">
+        <div class="card"><h3>Kullanıcı Bilgileri</h3><p><b>TC:</b> 12345678901</p><p><b>Telefon:</b> 0555 111 22 33</p><p><b>Adres:</b> İstanbul / Ataşehir</p></div>
+        <div class="card"><h3>Sağlık Notları</h3><p>Kronik ilaç takibi: Aktif</p><p>İlaç hatırlatma: 09:00 / 21:00</p><p>Yakın eczane: PharmaGo Nöbetçi Eczane</p></div>
+      </div>
+    </section>
+
+    <section id="enabiz" class="screen">
+      <div class="card">
+        <h3>e-Nabız Entegrasyonu</h3>
+        <p>Demo için TC ve şifre hazırdır. Bağlan butonuna basınca reçeteler otomatik gelir.</p>
+        <div class="form-grid">
+          <input id="tcInput" maxlength="11" value="12345678901" placeholder="TC Kimlik No" />
+          <input id="passInput" type="password" value="salih123" placeholder="e-Nabız Şifre" />
+          <button id="connectEnabiz" class="primary">e-Nabız Bağla</button>
+        </div>
+      </div>
+      <div id="recipes" class="grid two hidden"></div>
+    </section>
+
+    <section id="products" class="screen">
+      <div class="toolbar">
+        <input id="searchProduct" placeholder="Ürün ara: vitamin, ilaç, ateş ölçer..." />
+        <select id="categoryFilter"><option value="all">Tüm Kategoriler</option><option>Reçeteli</option><option>Reçetesiz</option><option>Medikal</option><option>Vitamin</option></select>
+      </div>
+      <div id="productList" class="grid three"></div>
+    </section>
+
+    <section id="cart" class="screen">
+      <div class="grid two">
+        <div class="card">
+          <h3>Sepet</h3>
+          <div id="cartItems"></div>
+          <hr />
+          <p class="total">Toplam: <b id="cartTotal">0 TL</b></p>
+        </div>
+        <div class="card">
+          <h3>Teslimat & Ödeme</h3>
+          <input id="address" value="İstanbul / Ataşehir - Demo Teslimat Adresi" />
+          <select id="payment"><option>Kapıda Nakit Ödeme</option><option>Online Kart Ödeme</option><option>Kapıda Kredi Kartı</option></select>
+          <textarea id="note" placeholder="Sipariş notu"></textarea>
+          <button id="createOrder" class="primary full">Sipariş Oluştur</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracking" class="screen">
+      <div class="card">
+        <h3>Canlı Sipariş Takibi</h3>
+        <p id="orderCode">Aktif sipariş bulunmuyor.</p>
+        <div class="track-line" id="trackLine"></div>
+        <button id="nextTrack" class="primary">Durumu İlerlet</button>
+      </div>
+    </section>
+
+    <section id="history" class="screen">
+      <div class="card">
+        <h3>Sipariş Geçmişi</h3>
+        <div class="table-wrap"><table><thead><tr><th>Sipariş No</th><th>Tutar</th><th>Ödeme</th><th>Durum</th></tr></thead><tbody id="historyBody"></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="support" class="screen">
+      <div class="grid two">
+        <div class="card">
+          <h3>Canlı Destek</h3>
+          <input id="supportName" value="Salih Efe Akardere" />
+          <textarea id="supportMsg" placeholder="Mesajınızı yazın"></textarea>
+          <button id="sendSupport" class="primary">Mesaj Gönder</button>
+          <p id="supportResult"></p>
+        </div>
+        <div class="card"><h3>Sık Sorulan Sorular</h3><details open><summary>Reçeteli ilaç alınır mı?</summary><p>Demo sistemde e-Nabız reçetesi seçilerek siparişe eklenebilir.</p></details><details><summary>Ödeme nasıl yapılır?</summary><p>Kapıda nakit, kapıda kart veya online kart seçilebilir.</p></details></div>
+      </div>
+    </section>
+
+    <section id="admin" class="screen">
+      <div class="grid two">
+        <div class="card"><h3>Admin Paneli</h3><p>Toplam Sipariş: <b id="adminOrders">0</b></p><p>Toplam Ciro: <b id="adminRevenue">0 TL</b></p><p>Aktif Kullanıcı: <b>Salih Efe Akardere</b></p></div>
+        <div class="card"><h3>Eczane Bilgisi</h3><p>PharmaGo Nöbetçi Eczane</p><p>Mesafe: 1.8 km</p><p>Kurye: Müsait</p></div>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="mobileMorePanel" class="mobile-more-panel">
+    <button data-screen="enabiz">🧾 e-Nabız</button>
+    <button data-screen="tracking">🚚 Sipariş Takibi</button>
+    <button data-screen="history">📜 Geçmiş</button>
+    <button data-screen="support">💬 Destek</button>
+    <button data-screen="admin">🔐 Admin Panel</button>
+  </div>
+
+  <nav class="mobile-bottom-nav" aria-label="Mobil Menü">
+    <button class="mobile-tab active" data-screen="dashboard"><b>🏠</b><span>Ana</span></button>
+    <button class="mobile-tab" data-screen="products"><b>💊</b><span>Ürün</span></button>
+    <button class="mobile-tab" data-screen="cart"><b>🛒</b><span>Sepet</span></button>
+    <button class="mobile-tab" data-screen="profile"><b>👤</b><span>Profil</span></button>
+    <button id="mobileMoreBtn" type="button"><b>☰</b><span>Diğer</span></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
